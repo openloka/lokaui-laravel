@@ -1,0 +1,24 @@
+{
+  "name": "lokaui/cli",
+  "description": "CLI to add LokaUI Blade components to your Laravel project",
+  "version": "0.1.0",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "LokaUI\\Cli\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LokaUI\\Cli\\LokaUIServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "illuminate/console": "^10.0|^11.0|^12.0",
+    "illuminate/support": "^10.0|^11.0|^12.0"
+  }
+}
